@@ -1,0 +1,50 @@
+.customer-reviews{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0;
+}
+
+.customer-reviews h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 15px 0 20px;
+}
+.customer-reviews-main{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    object-fit: cover;
+    border-radius:20px;
+    background: rgb(238, 205, 224);
+    padding: 20px 30px;
+}
+
+.customer-review-card{
+    border-radius: 20px;
+    background: rgb(235, 209, 209);
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(230, 176, 176, 0.733);
+}
+
+.customer-review-card img{
+    border-radius: 10px;
+}
+
+.customer-review-card h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.customer-review-card p{
+   font-size: 18px;
+   display: flex;
+}
+
+.star{
+    margin-left: 6px;
+    stroke: #FFC107;
+}

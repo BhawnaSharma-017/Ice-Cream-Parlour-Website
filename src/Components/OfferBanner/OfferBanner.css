@@ -1,0 +1,65 @@
+.offer-banner{
+    background: linear-gradient(to right,  rgba(245, 226, 226, 0.95) 35%,
+            rgba(255,255,255,0.5) 60%,
+            rgba(255,255,255,0) 100%),
+            url('../../assets/special_banner.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    margin: 20px 0 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-banner h1{
+    font-size: 34px;
+    margin: 20px 0 10px;
+    line-height: 1;
+    gap: 10px;
+    font-weight: 700;
+    display: flex;
+    padding: auto;
+
+}
+
+.offer-banner p{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0 20px;
+}
+
+@media (max-width: 768px) {
+    .offer-banner {
+        min-height: 180px;
+        padding: 20px;
+    }
+
+    .offer-banner h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .offer-banner p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .offer-banner {
+        min-height: 160px;
+        padding: 16px;
+    }
+
+    .offer-banner h1 {
+        font-size: 22px;
+    }
+
+    .offer-banner p {
+        font-size: 16px;
+    }
+}

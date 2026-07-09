@@ -1,0 +1,161 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    margin:auto;
+    background: rgb(238, 205, 224);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.navbar-scroll{
+    background: rgba(235, 214, 226, 0.95);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  
+}
+
+.navbar-left img{
+    width: 80px;
+    height: auto;
+}
+
+.navbar-left h1{
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.navbar-right{
+    display: flex;
+    gap: 50px;
+}
+.navbar-right ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.menu-icon{
+    display:none;
+    cursor:pointer;
+}
+
+/* Media Query */
+@media (max-width: 992px){
+
+    .navbar{
+        padding: 20px 30px;
+    }
+
+    .navbar-left img{
+        width: 65px;
+    }
+
+    .navbar-left h1{
+        font-size: 28px;
+    }
+
+    .navbar-right{
+        gap: 30px;
+    }
+
+    .navbar-right ul{
+        gap: 25px;
+    }
+}  
+
+@media (max-width: 768px){
+
+    .navbar{
+        padding: 20px;
+    }
+
+    .navbar-left img{
+        width: 55px;
+    }
+
+    .navbar-left h1{
+        font-size: 24px;
+    }
+
+    .navbar-right{
+        gap: 20px;
+    }
+
+    .navbar-right ul{
+        gap: 18px;
+        font-size: 15px;
+    }
+    .menu-icon{
+        display:block;
+        z-index:1001;
+    }
+
+    .nav-links{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:250px;
+        height:100vh;
+        background:#f8d6e3;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:30px;
+        cursor: pointer;
+        transition:.4s;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+}
+
+@media (max-width: 576px){
+
+    .navbar{
+        padding: 15px;
+        height: 60px;
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .navbar-left img{
+        width: 45px;
+    }
+
+    .navbar-left h1{
+        font-size: 20px;
+    }
+
+    .navbar-right ul{
+        display: none;
+    }
+}

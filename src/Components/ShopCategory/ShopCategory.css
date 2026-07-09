@@ -1,0 +1,117 @@
+.shop-category{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-category-container{
+    width: 85%;
+    min-height: 200px;
+    height: auto;
+    background: rgb(238, 205, 224);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.shop-category-container h1{
+    font-weight: 700;
+}
+
+.shop-category-categories{
+    display: flex;
+    margin: 40px 0;
+    gap: 70px;
+}
+
+.shop-category-categories p{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 5px;
+    border: 1px solid violet;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background: linear-gradient(to right ,rgb(243, 217, 221), pink);
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(199, 104, 131, 0.4);;
+}
+
+
+/* Large tablets */
+@media (max-width: 992px){
+
+    .shop-category{
+        height: auto;
+    }
+
+    .shop-category-container{
+        width: 90%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .shop-category-categories{
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .shop-category-categories p{
+        font-size: 16px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px){
+
+    .shop-category-container h1{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .shop-category-categories{
+        gap: 20px;
+    }
+
+    .shop-category-categories p{
+        font-size: 15px;
+        padding: 8px 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+
+    .shop-category{
+        min-height: auto;
+        padding: 30px 0;
+        margin: 20px 0;
+    }
+
+    .shop-category-container{
+        width: 95%;
+        padding: 25px 15px;
+    }
+
+    .shop-category-container h1{
+        font-size: 22px;
+    }
+
+    .shop-category-categories{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 25px 0;
+    }
+
+    .shop-category-categories p{
+        width: 200px;
+        justify-content: center;
+        font-size: 15px;
+    }
+}

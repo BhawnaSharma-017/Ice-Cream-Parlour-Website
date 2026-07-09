@@ -1,0 +1,77 @@
+.hero-flavours{
+    padding-top: 70px;
+    background:
+        linear-gradient(
+            to right,
+            rgba(245, 226, 226, 0.95) 35%,
+            rgba(255,255,255,0.5) 60%,
+            rgba(255,255,255,0) 100%
+        ),
+        url("../../assets/hero_flavours.jfif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-flavours-content{
+    padding: 30px 0 50px;
+}
+
+.hero-flavours h1{
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.hero-flavours p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-flavours {
+        padding-top: 90px; 
+        text-align: center;
+    }
+
+    .hero-flavours-content {
+        padding: 25px 20px 40px;
+    }
+
+    .hero-flavours h1 {
+        font-size: 32px;
+        flex-wrap: wrap;
+    }
+
+    .hero-flavours p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-flavours {
+        padding-top: 80px;
+    }
+
+    .hero-flavours-content {
+        padding: 20px 15px 30px;
+    }
+
+    .hero-flavours h1 {
+        font-size: 26px;
+        gap: 4px;
+    }
+
+    .hero-flavours p {
+        font-size: 18px;
+    }
+}

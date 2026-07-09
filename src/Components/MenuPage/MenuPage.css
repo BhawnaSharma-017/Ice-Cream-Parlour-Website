@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.menu-page{
+    background:
+        linear-gradient(
+            to right,
+            rgba(238, 226, 226, 0.95) 10%,
+            rgba(238, 234, 234, 0.5) 70%,
+            rgba(134, 114, 114, 0) 90%
+        ),
+        url("../../assets/menu_background.jfif");
+
+    background-size: cover;
+
+    background-repeat: no-repeat;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-page h1{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: "Lobster Two", sans-serif;
+    text-shadow: 3px 6px 10px rgb(226, 175, 184);
+    margin: 40px 0 50px;
+}
+
+.menu-page h4{
+    font-size: 40px;
+    font-weight: 600;
+    border: 1px solid rgb(182, 158, 158);
+    box-shadow: 0 30px 60px rgb(196, 171, 171);
+    padding: 4px 30px 4px;
+    border-radius: 40px;
+}
+
+.menu-page h4:hover{
+    cursor: pointer;
+    background: linear-gradient(to right , rgb(218, 205, 205),rgb(214, 182, 182));
+}
+.menu-page-cards{ 
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 30px;
+    margin: 20px 30px 50px;
+    position: relative;
+}
+
+.menu-page-cards::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(167, 94, 141, 0.6),
+        transparent
+    );
+    border-radius: 999px;
+}
+
+.menu-page-card{
+    margin: 50px 40px 30px;
+    display: flex;
+}
+
+.menu-page-card img{
+    width: 350px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.menu-page-card-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 3px 6px 8px rgb(214, 166, 175);
+}
+
+.menu-page-card-content h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menu-page-card-content p{
+    display: flex;
+    font-size: 18px;
+    gap: 6px;
+    font-weight: 400;
+}
+
+.menu-card-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-card-price p{
+    font-weight: bold;
+}
+
+.menu-card-price svg{
+    color: rgb(233, 233, 11);
+    fill: rgb(231, 231, 28);
+}
+
+.menu-page button{
+    padding:9px 28px;
+    font-size: 18px;
+    border-radius: 30px;
+    background: linear-gradient(to right , rgb(218, 205, 205),rgb(214, 182, 182));
+    cursor: pointer;
+    color: rgb(100, 6, 100);
+    margin-bottom: 30px;
+    border: 1px solid rgb(218, 197, 197);
+}
+
+.menu-page button:hover{
+    background: linear-gradient(to right , rgb(192, 167, 167),rgb(211, 161, 161));
+}
+@media (max-width: 1200px) {
+  .menu-page-card img {
+    width: 280px;
+  }
+
+  .menu-page-card-content h2 { font-size: 26px; }
+}
+
+@media (max-width: 992px) {
+  .menu-page-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-page-cards::before {
+    display: none;
+  }
+
+  .menu-page-card {
+    margin: 30px 20px;
+  }
+
+  .menu-page h1 { font-size: 56px; }
+  .menu-page h4 { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+  .menu-page-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-page-card img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 0 20px;
+  }
+
+  .menu-card-price {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu-page h1 { font-size: 42px; }
+  .menu-page h4 { font-size: 26px; }
+}
+
+@media (max-width: 480px) {
+  .menu-page h1 { font-size: 32px; }
+  .menu-page h4 {
+    font-size: 20px;
+    padding: 4px 20px;
+  }
+
+  .menu-page-card-content h2 { font-size: 24px; }
+  .menu-page-card-content h3 { font-size: 20px; }
+  .menu-page-card-content p { font-size: 16px; }
+}

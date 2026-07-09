@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.menu-cover-page{
+    
+    background: url('../../assets/menucover_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-cover-page img{
+    height: 70vh;
+}
+
+.menu-cover-page h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.menu-cover-page h2{
+    font-family: "Lobster Two", sans-serif; 
+    font-size: 54px;
+    font-weight: 500;    
+}
+
+.menu-cover-page button{
+    padding: 10px 30px 10px;
+    cursor: pointer;
+    margin: 40px 0 50px;
+    font-size: 18px;
+    border-radius: 30px;
+    background: rgb(247, 158, 198);
+    color: rgb(104, 7, 104);
+    border: none;
+    box-shadow: 0 8px 10px rgb(231, 173, 183);
+}
